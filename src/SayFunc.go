@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func SayFunc() {
-	fmt.Print("say...aa")
+	fmt.Print("say...a")
 }
