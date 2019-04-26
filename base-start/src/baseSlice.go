@@ -52,6 +52,18 @@ func main() {
 	numbers2 := arr[:2]
 	numbers3 := arr[2:5]
 
+	/*添加元素*/
+	arr = append(arr, 9)
+	printSlice(arr)
+
+	/*创建切片 arr 是之前切片的两倍容量*/
+	number1 := make([]int, len(arr), (cap(arr))*2)
+
+	copy(number1, arr)
+
+	fmt.Println("number1 ")
+	printSlice(number1)
+
 	printSlice(arrs)
 
 	printSlice(numbers2)
